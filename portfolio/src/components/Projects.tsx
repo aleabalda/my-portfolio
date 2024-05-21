@@ -14,18 +14,20 @@ export default function Projects() {
           alt="memoji laptop"
         />
       </div>
-      {ProjectData.map((val, key) => (
-        <Project
-          key={`project-${key}`}
-          title={val.name}
-          description={val.description}
-          tools={val.tools}
-          icon={val.icon}
-          siteLink={val.siteLink}
-          sourceCode={val.sourceCode}
-          imageURL={val.imageURL}
-        />
-      ))}
+      <div className="projects">
+        {ProjectData.map((val, key) => (
+          <Project
+            key={`project-${key}`}
+            title={val.name}
+            description={val.description}
+            tools={val.tools}
+            icon={val.icon}
+            siteLink={val.siteLink}
+            sourceCode={val.sourceCode}
+            imageURL={val.imageURL}
+          />
+        ))}
+      </div>
     </section>
   );
 }

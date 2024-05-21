@@ -17,7 +17,7 @@ export const AboutCard = ({
     <>
       <div id={id} className="about-card">
         <img className="about-card-image" src={image} alt="card background" />
-        <div className="about-card-text-container">
+        <div className="about-card-content">
           <h3 className="about-card-title">{title}</h3>
           <div className="about-card-body">
             {text.map((val, key) => (

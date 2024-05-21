@@ -21,11 +21,13 @@ export default function Skills() {
           {LogoData.map((val, key) => (
             <div key={`logo-${key}`} className="logo">
               <img className="logo-image" src={val.logoURL} alt={val.name} />
+              <div className="tooltip">{val.name}</div>
             </div>
           ))}
           {LogoData.map((val, key) => (
-            <div key={`logo-${key}`} className="logo" aria-hidden="true">
+            <div key={`logo-${key}`} className="logo dupe" aria-hidden="true">
               <img className="logo-image" src={val.logoURL} alt={val.name} />
+              <div className="tooltip">{val.name}</div>
             </div>
           ))}
         </div>
