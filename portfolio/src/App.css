@@ -988,6 +988,7 @@ footer {
     footer .navbar {
       position: absolute;
       bottom: 15px;
+      left: 30px;
     }
   }
 
@@ -1008,6 +1009,9 @@ footer {
     .contact-form {
       grid-column: span 2;
       margin-right: 0;
+    }
+    footer {
+      padding: 0 20px;
     }
     footer #resume-button {
       padding: 10px;
