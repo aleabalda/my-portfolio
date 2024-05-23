@@ -18,7 +18,7 @@ export default function Header() {
         <span className="menu-icon" onClick={toggleMenu}>
           <MenuIcon />
         </span>
-        {menuOpen && <Menu />}
+        {menuOpen && <Menu toggle={toggleMenu} />}
       </div>
     </header>
   );

@@ -127,6 +127,7 @@ header .name {
 .menu .menu-item {
   padding: 10px;
   transition: background-color 300ms ease;
+  cursor: pointer;
 }
 
 .menu .menu-item .menu-link {
