@@ -7,17 +7,17 @@ export const Menu = () => {
         </a>
       </li>
       <li className="menu-item">
-        <a href="#projects-section" className="menu-link">
+        <a href="#skills-section" className="menu-link">
           Skills
         </a>
       </li>
       <li className="menu-item">
-        <a href="#projects-section" className="menu-link">
+        <a href="#about-section" className="menu-link">
           About
         </a>
       </li>
       <li className="menu-item">
-        <a href="#projects-section" className="menu-link">
+        <a href="#contact-section" className="menu-link">
           Contact
         </a>
       </li>
