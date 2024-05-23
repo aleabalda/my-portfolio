@@ -1,70 +1,88 @@
+import htmlLogo from "../assets/logos/file-type-html.svg";
+import cssLogo from "../assets/logos/file-type-css.svg";
+import jsLogo from "../assets/logos/javascript.svg";
+import tsLogo from "../assets/logos/file-type-typescript-official.svg";
+import reactLogo from "../assets/logos/file-type-reactjs.svg";
+import nodeLogo from "../assets/logos/node-js.svg";
+import expressLogo from "../assets/logos/express-original.svg";
+import tailwindLogo from "../assets/logos/tailwind-css.svg";
+import mongoLogo from "../assets/logos/mongodb-original.svg";
+import mysqlLogo from "../assets/logos/mysql-original-wordmark.svg";
+import pythonLogo from "../assets/logos/python.svg";
+import javaLogo from "../assets/logos/java-original.svg";
+import cLogo from "../assets/logos/c.svg";
+import cPlusLogo from "../assets/logos/c-original.svg";
+import gitLogo from "../assets/logos/git.svg";
+import tfLogo from "../assets/logos/file-type-terraform.svg";
+import awsLogo from "../assets/logos/aws.svg";
+
 export const LogoData = [
   {
     name: "HTML",
-    logoURL: "/src/assets/logos/file-type-html.svg",
+    logoURL: htmlLogo,
   },
   {
     name: "CSS",
-    logoURL: "/src/assets/logos/file-type-css.svg",
+    logoURL: cssLogo,
   },
   {
     name: "JavaScript",
-    logoURL: "/src/assets/logos/javascript.svg",
+    logoURL: jsLogo,
   },
   {
     name: "TypeScript",
-    logoURL: "/src/assets/logos/file-type-typescript-official.svg",
+    logoURL: tsLogo,
   },
   {
     name: "React.js",
-    logoURL: "/src/assets/logos/file-type-reactjs.svg",
+    logoURL: reactLogo,
   },
   {
     name: "TailwindCSS",
-    logoURL: "/src/assets/logos/tailwind-css.svg",
+    logoURL: tailwindLogo,
   },
   {
     name: "Node.js",
-    logoURL: "/src/assets/logos/node-js.svg",
+    logoURL: nodeLogo,
   },
   {
     name: "Express.js",
-    logoURL: "/src/assets/logos/express-original.svg",
+    logoURL: expressLogo,
   },
   {
     name: "MongoDB",
-    logoURL: "/src/assets/logos/mongodb-original.svg",
+    logoURL: mongoLogo,
   },
   {
     name: "MySql",
-    logoURL: "/src/assets/logos/mysql-original-wordmark.svg",
+    logoURL: mysqlLogo,
   },
   {
     name: "Python",
-    logoURL: "/src/assets/logos/python.svg",
+    logoURL: pythonLogo,
   },
   {
     name: "Java",
-    logoURL: "/src/assets/logos/java-original.svg",
+    logoURL: javaLogo,
   },
   {
     name: "C",
-    logoURL: "/src/assets/logos/c-original.svg",
+    logoURL: cLogo,
   },
   {
     name: "C++",
-    logoURL: "/src/assets/logos/c.svg",
+    logoURL: cPlusLogo,
   },
   {
     name: "Git",
-    logoURL: "/src/assets/logos/git.svg",
+    logoURL: gitLogo,
   },
   {
     name: "Terraform",
-    logoURL: "/src/assets/logos/file-type-terraform.svg",
+    logoURL: tfLogo,
   },
   {
     name: "AWS",
-    logoURL: "/src/assets/logos/aws.svg",
+    logoURL: awsLogo,
   },
 ];
