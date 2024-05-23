@@ -11,7 +11,7 @@ export default function Skills() {
   }, [setNoPreference]);
 
   return (
-    <section id="skills" className="section-container">
+    <section id="skills-section" className="section-container">
       <h2 className="skills-heading">Skills</h2>
       <p className="skills-text">
         My constantly expanding set of tools and technologies

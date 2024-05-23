@@ -1,9 +1,26 @@
 export default function Navbar() {
   return (
-    <div className="navbar">
-      <div className="navbar-item">Projects</div>
-      <div className="navbar-item">About</div>
-      <div className="navbar-item">Contact</div>
-    </div>
+    <ul className="navbar">
+      <li className="navbar-item">
+        <a className="nav-link" href="#projects-section">
+          Projects
+        </a>
+      </li>
+      <li className="navbar-item">
+        <a className="nav-link" href="#skills-section">
+          Skills
+        </a>
+      </li>
+      <li className="navbar-item">
+        <a className="nav-link" href="#about-section">
+          About
+        </a>
+      </li>
+      <li className="navbar-item">
+        <a className="nav-link" href="#contact-section">
+          Contact
+        </a>
+      </li>
+    </ul>
   );
 }

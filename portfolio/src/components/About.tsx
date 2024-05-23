@@ -4,7 +4,7 @@ import { AboutData } from "./AboutData";
 
 export default function About() {
   return (
-    <section id="about" className="section-container">
+    <section id="about-section" className="section-container">
       <div className="section-heading">
         <h2>About Me</h2>
         <img

@@ -1,31 +1,42 @@
 import { Button } from "../components/ui/Button";
 import WavingHand from "../assets/icons/WavingHand";
 import pfp from "../assets/images/pfp.jpg";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
     <section id="hero-section" className="section-container">
-      <div className="hero-text-container">
-        <p className="hero-text">
-          Hello there <WavingHand /> my name is
-        </p>
-        <p id="hero-name" className="name">
-          Alessandro Baldassarre
-        </p>
-        <p id="role" className="hero-text">
-          Full-Stack Developer
-        </p>
-        <p id="mini-info" className="hero-text">
-          I am a third-year software engineering student at the University of
-          Calgary passionate about full-stack development. Welcome to my
-          website!
-        </p>
-        <div className="button-group">
-          <Button ID="primary" text="View Resume" />
-          <Button ID="secondary" text="Linktree" />
+      <div id="hero-content" className="section-container">
+        <div className="hero-text-container">
+          <p className="hero-text">
+            Hello there <WavingHand /> my name is
+          </p>
+          <p id="hero-name" className="hero-title">
+            Alessandro Baldassarre
+          </p>
+          <p id="role" className="hero-title">
+            <TypeAnimation
+              sequence={[
+                "Aspiring Full-Stack Developer",
+                1000,
+                "Software Engineering Student",
+                1000,
+              ]}
+              repeat={Infinity}
+            />
+          </p>
+          <p id="mini-info" className="hero-text">
+            I am a third-year software engineering student at the University of
+            Calgary passionate about full-stack development. Welcome to my
+            website!
+          </p>
+          <div className="button-group">
+            <Button ID="primary" text="View Resume" />
+            <Button ID="secondary" text="Linktree" />
+          </div>
         </div>
+        <img className="pfp" alt="pfp" src={pfp} />
       </div>
-      <img className="pfp" alt="pfp" src={pfp} />
     </section>
   );
 }

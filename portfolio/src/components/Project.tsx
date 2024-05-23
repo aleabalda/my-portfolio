@@ -2,7 +2,7 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 interface ProjectProps {
   title: string;
-  description: string[];
+  description: JSX.Element;
   tools: string[];
   icon: JSX.Element;
   siteLink: string | undefined;
@@ -27,13 +27,7 @@ export default function Project({
       </div>
       <div className="project-info">
         <h3>{title}</h3>
-        <div className="project-body">
-          {description.map((val, key) => (
-            <p key={`text-${key}`} className="description-text">
-              {val}
-            </p>
-          ))}
-        </div>
+        <div className="project-body">{description}</div>
         <div className="tools-list">
           {tools.map((val, key) => (
             <div key={`tool-${key}`} className="project-tool">
