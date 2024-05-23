@@ -13,12 +13,22 @@
   --background-clr: #fff2ca;
 }
 
+@font-face {
+  font-family: Bebas;
+  src: url("./assets/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-Medium.ttf");
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   background-color: #fff2ca;
   font-size: 20px;
 }
@@ -35,14 +45,14 @@ h1 {
 }
 
 h2 {
-  font-family: "Bebas Neue";
+  font-family: Bebas;
   font-size: 48px;
   font-weight: normal;
   margin: 0;
 }
 
 h3 {
-  font-family: "Bebas Neue";
+  font-family: Bebas;
   font-size: 32px;
   font-weight: normal;
   margin: 0;
@@ -54,6 +64,15 @@ header {
   padding: 20px;
   align-items: center;
   background-color: #d3db97;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 .navbar {
@@ -156,7 +175,7 @@ header .name {
 }
 
 .hero-title {
-  font-family: "Bebas Neue";
+  font-family: Bebas;
   font-weight: normal;
   height: 100px;
   font-size: 86px;
@@ -222,11 +241,6 @@ header .name {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 300ms ease, box-shadow 300ms ease;
-}
-
-.link {
-  text-decoration: none;
-  color: black;
 }
 
 #primary {
@@ -618,8 +632,8 @@ label {
   background-color: var(--primary-clr);
 }
 
-a:visited {
-  color: black;
+.social-info {
+  text-decoration: underline;
 }
 
 #email {
