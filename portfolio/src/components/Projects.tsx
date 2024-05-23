@@ -25,6 +25,7 @@ export default function Projects() {
             siteLink={val.siteLink}
             sourceCode={val.sourceCode}
             imageURL={val.imageURL}
+            demo={val.demo}
           />
         ))}
       </div>

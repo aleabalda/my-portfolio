@@ -93,6 +93,7 @@ export const ProjectData = [
     siteLink: "https://google-hack-deploy-frontend.vercel.app/",
     sourceCode: "https://github.com/hackathon-team-ajgk/google-hack-deploy",
     icon: <MovieListIcon />,
+    demo: "https://youtu.be/pbtE5Qfy6e4?si=v5Sn7eQcV1d1KIJJ",
   },
   {
     name: "Beyond",
@@ -204,6 +205,7 @@ export const ProjectData = [
     siteLink: "https://beyond-the-stars.netlify.app/",
     sourceCode: "https://github.com/ensf401-beyond/beyond-fe",
     icon: <SpaceIcon />,
+    demo: "https://youtu.be/WAuLuewLa6I",
   },
   {
     name: "Flight Reservation App",

@@ -3,7 +3,7 @@ export const MovieListIcon: React.FC = () => {
     <>
       <svg
         className="project-icon"
-        enable-background="new 0 0 24 24"
+        enableBackground="new 0 0 24 24"
         height="24px"
         id="Layer_1"
         version="1.1"

@@ -31,8 +31,16 @@ export default function Hero() {
             website!
           </p>
           <div className="button-group">
-            <Button ID="primary" text="View Resume" />
-            <Button ID="secondary" text="Linktree" />
+            <Button
+              ID="primary"
+              text="View Resume"
+              link="/src/assets/Resume.docx"
+            />
+            <Button
+              ID="secondary"
+              text="Linktree"
+              link="https://linktr.ee/aleabalda"
+            />
           </div>
         </div>
         <img className="pfp" alt="pfp" src={pfp} />

@@ -210,7 +210,7 @@ header .name {
 
 .button-group {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   width: fit-content;
 }
 
@@ -222,6 +222,11 @@ header .name {
   border-radius: 5px;
   cursor: pointer;
   transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
 
 #primary {
@@ -292,7 +297,7 @@ header .name {
   border-radius: 30px;
   display: grid;
   place-items: center;
-  box-shadow: 0 4px 20px gray;
+  box-shadow: 0 4px 15px gray;
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -351,6 +356,7 @@ header .name {
 }
 
 .project-link {
+  color: black;
   display: flex;
   font-size: 16px;
   text-decoration: none;
@@ -666,11 +672,16 @@ footer {
 @media (hover) {
   .button:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 5px var(--dark-primary-clr);
+  }
+
+  #submit-button:hover {
     box-shadow: 0 5px 5px gray;
   }
+
   .nav-link::after {
     content: "";
-    height: 4px;
+    height: 2px;
     width: 100%;
     position: absolute;
     background-color: black;
@@ -684,50 +695,84 @@ footer {
   .navbar-item:hover .nav-link::after {
     transform: scaleX(1);
   }
+
   .about-card-title::after {
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 500ms ease;
   }
+
   .about-card:hover .about-card-title::after {
     transform: scaleX(1);
   }
+
+  .about-card-title.about-card-title {
+    transform: translateX(-130%);
+  }
+
+  .about-card:hover .about-card-title {
+    transform: translateX(0);
+    transition: transform 500ms ease;
+  }
+
   .about-card-image {
     filter: brightness(80%);
     transition: filter 300ms ease;
   }
+
   .about-card:hover .about-card-image {
     filter: brightness(40%);
   }
+
   .about-card-content > * {
     opacity: 0;
     transition: opacity 500ms linear;
   }
+
   .about-card:hover .about-card-content > * {
     opacity: 1;
   }
+
+  .about-card-content .about-card-body {
+    transform: translateY(130%) !important;
+    opacity: 0;
+    transition: transform 800ms ease;
+  }
+
+  .about-card:hover .about-card-body {
+    transform: translateY(0) !important;
+    transition-delay: 300ms;
+  }
+
   .form-input:hover {
     background-color: rgba(211, 219, 151, 0.8);
     box-shadow: 0 4px 10px gray;
   }
+
   .menu-item:hover {
     background-color: #d3db97;
   }
+
   .project-image {
     opacity: 0;
   }
+
   .project-icon {
     opacity: 1;
   }
+
   .image-card:hover .project-image {
     opacity: 1;
   }
+
   .image-card:hover .project-icon {
     opacity: 0;
   }
+
   .project-link:hover {
     text-decoration: underline;
   }
+
   .logo:hover .tooltip {
     opacity: 1;
   }
@@ -796,7 +841,7 @@ footer {
     .hero-title {
       font-size: 36px;
       -webkit-text-stroke: 0;
-      text-shadow: 1px 1px 2px black;
+      text-shadow: 1px 1px 1px black;
     }
     #hero-name {
       font-size: 26px;
@@ -941,6 +986,12 @@ footer {
     }
     .name {
       font-size: 24px;
+    }
+    .project-tool {
+      font-size: 12px;
+    }
+    .project-link {
+      font-size: 14px;
     }
     #contact-section {
       grid-template-columns: 1fr;

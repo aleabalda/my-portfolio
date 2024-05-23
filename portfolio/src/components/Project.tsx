@@ -8,6 +8,7 @@ interface ProjectProps {
   siteLink: string | undefined;
   sourceCode: string;
   imageURL: string;
+  demo?: string;
 }
 
 export default function Project({
@@ -18,6 +19,7 @@ export default function Project({
   siteLink,
   sourceCode,
   imageURL,
+  demo,
 }: ProjectProps) {
   return (
     <div className="project">
@@ -54,6 +56,16 @@ export default function Project({
           >
             View Source Code <ArrowForwardIosIcon fontSize="small" />
           </a>
+          {demo !== undefined && (
+            <a
+              id="view-demo"
+              className="project-link"
+              href={demo}
+              target="_blank"
+            >
+              View Demo <ArrowForwardIosIcon fontSize="small" />
+            </a>
+          )}
         </div>
       </div>
     </div>

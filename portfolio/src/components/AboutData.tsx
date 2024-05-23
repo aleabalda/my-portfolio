@@ -14,7 +14,7 @@ export const AboutData = [
     text: [
       "Coding has become such a huge part of my life. I started coding my first year of university and found a passion for web development.",
       "When I first started web development I despised it. It’s funny how things change. My current tech stack is MERN and in terms of other tools I use VSCode and Vite.",
-      "I have been coding for the past three years now, primarily web development. My other courses in university have taught me other concepts such as embedded systems, software testing, DevOps, and many more.",
+      "I have been coding for the past three years now, primarily web development. My other courses in university have taught me other concepts such as embedded systems, software testing, DevOps, and many more. Check out my resume!",
     ],
     reference: "Photo by Walling on Unsplash",
   },

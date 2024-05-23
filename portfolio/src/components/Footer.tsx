@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import { Button } from "./ui/Button";
 
 export default function Footer() {
   return (
@@ -32,9 +33,11 @@ export default function Footer() {
         >
           <InstagramIcon />
         </a>
-        <button id="resume-button" className="button">
-          Resume
-        </button>
+        <Button
+          ID="resume-button"
+          text="Resume"
+          link="/src/assets/Resume.docx"
+        />
       </div>
     </footer>
   );
