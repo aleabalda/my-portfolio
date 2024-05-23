@@ -2,6 +2,7 @@ import { Button } from "../components/ui/Button";
 import WavingHand from "../assets/icons/WavingHand";
 import pfp from "../assets/images/pfp.jpg";
 import { TypeAnimation } from "react-type-animation";
+import Resume from "../assets/Resume.pdf";
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
       <div id="hero-content" className="section-container">
         <div className="hero-text-container">
           <p className="hero-text">
-            Hello there <WavingHand /> my name is
+            Hello there, <WavingHand /> my name is
           </p>
           <p id="hero-name" className="hero-title">
             Alessandro Baldassarre
@@ -31,11 +32,7 @@ export default function Hero() {
             website!
           </p>
           <div className="button-group">
-            <Button
-              ID="primary"
-              text="View Resume"
-              link="/src/assets/Resume.docx"
-            />
+            <Button ID="primary" text="View Resume" link={Resume} />
             <Button
               ID="secondary"
               text="Linktree"

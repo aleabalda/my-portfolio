@@ -23,7 +23,7 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div className="project">
-      <div className="image-card">
+      <div className="image-card outlined">
         <img className="project-image" src={imageURL} alt="project image" />
         <span className="project-icon-container">{icon}</span>
       </div>

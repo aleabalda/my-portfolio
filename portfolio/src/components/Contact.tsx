@@ -4,6 +4,7 @@ import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import memoji from "../assets/images/memoji.png";
 
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -41,13 +42,21 @@ export default function Contact() {
 
   return (
     <section id="contact-section" className="section-container">
-      <div className="contact-img grid-col-span-2"></div>
+      <div className="contact-img grid-col-span-2 outlined"></div>
       <form
         ref={form}
         className="contact-form grid-col-span-2"
         onSubmit={sendEmail}
       >
-        <h2 className="contact-heading">Contact Me</h2>
+        <div id="contact-heading" className="section-heading">
+          <h2 id="contact-h2">Contact Me</h2>
+          <img
+            id="contact-memoji"
+            className="memoji"
+            src={memoji}
+            alt="memoji contact"
+          />
+        </div>
         <input
           id="name-input"
           name="user_name"

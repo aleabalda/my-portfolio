@@ -15,7 +15,7 @@ export const AboutCard = ({
 }: AboutCardProps) => {
   return (
     <>
-      <div id={id} className="about-card">
+      <div id={id} className="about-card outlined">
         <img className="about-card-image" src={image} alt="card background" />
         <div className="about-card-content">
           <h3 className="about-card-title">{title}</h3>
