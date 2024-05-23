@@ -6,14 +6,8 @@ interface ButtonProps {
 
 export const Button = ({ ID, text, link }: ButtonProps) => {
   return (
-    <button id={ID} className="button">
-      {link ? (
-        <a className="link" href={link} target="_blank">
-          {text}
-        </a>
-      ) : (
-        text
-      )}
-    </button>
+    <a id={ID} className="button" href={link} target="_blank">
+      {text}
+    </a>
   );
 };
