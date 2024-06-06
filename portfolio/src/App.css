@@ -312,7 +312,6 @@ header .name {
   display: grid;
   place-items: center;
   box-shadow: 0 4px 15px gray;
-  cursor: pointer;
   position: relative;
 }
 
@@ -356,7 +355,7 @@ header .name {
 .tools-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-bottom: 20px;
 }
 
