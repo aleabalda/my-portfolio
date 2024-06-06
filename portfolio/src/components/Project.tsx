@@ -37,7 +37,7 @@ export default function Project({
             </div>
           ))}
         </div>
-        <div className="button-group">
+        <div id="project-links" className="button-group">
           {siteLink !== undefined && (
             <a
               id="view-site"
