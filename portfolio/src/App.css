@@ -601,6 +601,7 @@ header .name {
   margin-top: auto;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .blog-tag {
@@ -962,6 +963,11 @@ footer {
     .social {
       font-size: 16px;
     }
+    .blog-posts {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
   }
 
   @media (max-width: 1024px) {
@@ -1045,6 +1051,10 @@ footer {
     #footer-name {
       font-size: 20px;
     }
+    .blog-card {
+      width: 350px;
+      height: 500px;
+    }
   }
   @media (max-width: 768px) {
     .section-container {
@@ -1064,6 +1074,13 @@ footer {
       position: absolute;
       bottom: 15px;
       left: 30px;
+    }
+    .blog-posts {
+      grid-template-columns: 1fr;
+    }
+    .blog-card {
+      width: 100%;
+      height: fit-content;
     }
   }
 
