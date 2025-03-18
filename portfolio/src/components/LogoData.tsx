@@ -17,9 +17,7 @@ import tfLogo from "../assets/logos/file-type-terraform.svg";
 import awsLogo from "../assets/logos/aws.svg";
 import dockerLogo from "../assets/logos/docker.svg";
 import cSharpLogo from "../assets/logos/c-sharp-c.svg";
-import jenkinsLogo from "../assets/logos/jenkins-original.svg";
 import kubernetesLogo from "../assets/logos/kubernetes.svg";
-import jiraLogo from "../assets/logos/jira.svg";
 import figmaLogo from "../assets/logos/figma.svg";
 import ansibleLogo from "../assets/logos/ansible.svg";
 
@@ -107,14 +105,6 @@ export const LogoData = [
   {
     name: "Ansible",
     logoURL: ansibleLogo,
-  },
-  {
-    name: "Jenkins",
-    logoURL: jenkinsLogo,
-  },
-  {
-    name: "Jira",
-    logoURL: jiraLogo,
   },
   {
     name: "Figma",

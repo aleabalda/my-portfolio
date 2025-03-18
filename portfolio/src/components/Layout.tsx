@@ -1,25 +1,15 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Skills from "./Skills";
-import About from "./About";
-import Contact from "./Contact";
-import { Blog } from "./Blog"
+import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <>
+    <div className="wrapper">
       <Header />
       <main className="page">
-        <Hero />
-        <Projects />
-        <Skills />
-        <About />
-        <Blog />
-        <Contact />
+        <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

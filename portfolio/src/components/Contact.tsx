@@ -1,5 +1,4 @@
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import PhoneInTalkOutlinedIcon from "@mui/icons-material/PhoneInTalkOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -116,14 +115,6 @@ export default function Contact() {
           </p>
         </div>
         <div className="detail">
-          <span id="phone-icon" className="contact-icon">
-            <PhoneInTalkOutlinedIcon />
-          </span>
-          <p id="phone" className="detail-info">
-            (403)-760-4930
-          </p>
-        </div>
-        <div className="detail">
           <span id="location-icon" className="contact-icon">
             <LocationOnOutlinedIcon />
           </span>
@@ -167,10 +158,10 @@ export default function Contact() {
           <a
             id="ig"
             className="social-info"
-            href="https://www.instagram.com/codewithalee/"
+            href="https://www.instagram.com/aleabalda.dev/"
             target="_blank"
           >
-            codewithalee
+            aleabalda.dev
           </a>
         </div>
       </div>
