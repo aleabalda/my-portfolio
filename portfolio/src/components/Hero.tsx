@@ -27,7 +27,7 @@ export default function Hero() {
             />
           </p>
           <p id="mini-info" className="hero-text">
-            I am a third-year software engineering student at the University of
+            I am a fourth-year software engineering student at the University of
             Calgary passionate about full-stack development. Welcome to my
             website!
           </p>
